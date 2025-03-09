@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginBtn">Login</button>
+            <a href="#" id="forgotPassword">Forgot password?</a>
+            <p>Don't have an account? <a href="#" id="showSignup">Signup</a></p>
+            <div class="social-login">
+                <button id="loginWithFacebook">Login with Facebook</button>
+                <button id="loginWithGoogle">Login with Google</button>
+            </div>
+        </div>
+        <div class="signup-form" style="display: none;">
+            <h2>Signup</h2>
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Create password">
+            <input type="password" id="confirmPassword" placeholder="Confirm password">
+            <button id="signupBtn">Signup</button>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+            <div class="social-login">
+                <button id="signupWithFacebook">Login with Facebook</button>
+                <button id="signupWithGoogle">Login with Google</button>
+            </div>
+        </div>
+        <div id="userInfo" style="display: none;">
+            <h3>User Info</h3>
+            <p id="userEmail"></p>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

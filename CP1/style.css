@@ -1,0 +1,31 @@
+.container {
+    width: 300px;
+    margin: 50px auto;
+}
+
+.login-form, .signup-form, #userInfo {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.social-login button {
+    background-color: #008CBA;
+    margin-top: 5px;
+}
